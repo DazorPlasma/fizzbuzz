@@ -21,6 +21,7 @@ impl Fizzy for i32 {
 pub fn play_fizzbuzz(iterator: impl IntoIterator<Item = i32>) -> String {
     let mut output = String::new();
     for i in iterator {
+        // TODO: combine this?
         output.push_str(&i.fizzy());
         output.push('\n');
     }
